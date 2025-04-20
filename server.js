@@ -98,7 +98,7 @@ app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 app.use(
   cors({
       origin: "https://escapadezanzibar-pd2a.vercel.app/",
-      // methods: ["GET", "POST", "PUT", "DELETE"],
+      methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
   })
 )
