@@ -96,10 +96,19 @@ const updateServiceDates = async () => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 app.use(cors());
+// app.use(
+//   cors(
+//     {
+//       origin: "https://escapadezanzibar-pd2a.vercel.app/",
+//       methods: ["GET", "POST", "PUT", "DELETE"],
+//       credentials: true,
+//     }
+//   )
+// )
 app.use(
   cors(
     {
-      origin: "https://escapadezanzibar-pd2a.vercel.app/",
+      origin: "https://77.247.126.189:3050/",
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     }
