@@ -1,0 +1,524 @@
+{
+  "Hotel": [
+    [
+      "From & TO",
+      "Hotel Region"
+    ],
+    [
+      "6 DEGREES SOUTH",
+      "Intra City"
+    ],
+    [
+      "AHG DREAM'S BAY BEACH HOTEL",
+      "North"
+    ],
+    [
+      "AHG SUN BAY MLILILE BEACH HOTEL",
+      "North East"
+    ],
+    [
+      "AHG WARIDI BEACH RESORT & SPA",
+      "North East"
+    ],
+    [
+      "AIRPORT KILIMANJARO",
+      "Tanzania"
+    ],
+    [
+      "AIRPORT ZANZIBAR",
+      "Intra City"
+    ],
+    [
+      "BADOLINA BUNGALOWS",
+      "North"
+    ],
+    [
+      "BALADIN ZANZIBAR BEACH HOTEL",
+      "South East"
+    ],
+    [
+      "BARAZA RESORT AND SPA ZANZIBAR",
+      "South East"
+    ],
+    [
+      "BAWE ISLAND",
+      "Intra City"
+    ],
+    [
+      "BEYT AL SALAAM",
+      "Intra City"
+    ],
+    [
+      "BLUE MOON RESORT",
+      "South East"
+    ],
+    [
+      "BLUEBAY BEACH RESORT & SPA",
+      "North East"
+    ],
+    [
+      "BREEZES BEACH CLUB & SPA ZANZIBAR",
+      "South East"
+    ],
+    [
+      "CASA BEACH HOTEL",
+      "South East"
+    ],
+    [
+      "CHIKACHIKA BEACH B&B",
+      "North"
+    ],
+    [
+      "CHUMBE ISLAND",
+      "Intra City"
+    ],
+    [
+      "COCCO BELLO NUNGWI",
+      "North"
+    ],
+    [
+      "DAR ES SALAAM",
+      "Tanzania"
+    ],
+    [
+      "DHOW INN BOUTIQUE HOTEL ZANZIBAR",
+      "South East"
+    ],
+    [
+      "DHOW PALACE HOTEL",
+      "Intra City"
+    ],
+    [
+      "DIAMONDS MAPENZI BEACH",
+      "North East"
+    ],
+    [
+      "DONGWE CLUB",
+      "South East"
+    ],
+    [
+      "ESSQUE ZALU ZANZIBAR",
+      "North"
+    ],
+    [
+      "EXCURSION",
+      "Not applicable"
+    ],
+    [
+      "F-ZEEN BOUTIQUE HOTEL ZANZIBAR",
+      "North East"
+    ],
+    [
+      "FILAO BEACH HOTEL",
+      "North East"
+    ],
+    [
+      "FRUIT AND SPICE WELLNESS",
+      "South"
+    ],
+    [
+      "FUN BEACH HOTEL",
+      "South east"
+    ],
+    [
+      "FUNDU LAGOON RESORT",
+      "Pemba Island"
+    ],
+    [
+      "GOLD ZANZIBAR",
+      "North"
+    ],
+    [
+      "GOLDEN TULIP STONETOWN BOUTIQUE",
+      "Intra City"
+    ],
+    [
+      "GOLDEN TULIP ZANZIBAR AIRPORT",
+      "Intra City"
+    ],
+    [
+      "HILIKI HOUSE",
+      "Intra City"
+    ],
+    [
+      "HOTEL RIU JAMBO",
+      "North"
+    ],
+    [
+      "HOTEL RIU PALACE ZANZIBAR",
+      "North"
+    ],
+    [
+      "INDIGO BEACH ZANZIBAR",
+      "South East"
+    ],
+    [
+      "JAFFERJI HOUSE",
+      "Intra City"
+    ],
+    [
+      "KAE BEACH RESORT",
+      "South East"
+    ],
+    [
+      "KARAFUU BEACH RESORT AND SPA",
+      "South East"
+    ],
+    [
+      "KASHA BOUTIQUE HOTEL",
+      "North East"
+    ],
+    [
+      "KENDWA ROCKS BEACH HOTEL",
+      "North"
+    ],
+    [
+      "KHOLLE HOUSE",
+      "Intra City"
+    ],
+    [
+      "KILINDI ZANZIBAR",
+      "North"
+    ],
+    [
+      "KISIWA HOUSE",
+      "Intra City"
+    ],
+    [
+      "KIWENGWA BEACH RESORT",
+      "North East"
+    ],
+    [
+      "KONOKONO BEACH RESORT",
+      "South East"
+    ],
+    [
+      "LA LUNA SUITE APARTMENTS",
+      "South East"
+    ],
+    [
+      "LUX MARIJANI",
+      "North East"
+    ],
+    [
+      "MARU MARU HOTEL",
+      "Intra City"
+    ],
+    [
+      "MELIA ZANZIBAR",
+      "North East"
+    ],
+    [
+      "MICHAMVI SUNSET BAY RESORT",
+      "South East"
+    ],
+    [
+      "MWEZI BOUTIQUE RESORT",
+      "South East"
+    ],
+    [
+      "MY BLUE HOTEL",
+      "North"
+    ],
+    [
+      "NEPTUNE PWANI BEACH RESORT & SPA",
+      "North East"
+    ],
+    [
+      "NEST STYLE BEACH HOTEL ZANZIBAR",
+      "South"
+    ],
+    [
+      "NEXT PARADISE BOUTIQUE RESORT",
+      "North East"
+    ],
+    [
+      "NUNGWI BEACH RESORT BY TURACO",
+      "North"
+    ],
+    [
+      "NUNGWI DREAMS BY MANTIS",
+      "North"
+    ],
+    [
+      "NUR BEACH HOTEL",
+      "South East"
+    ],
+    [
+      "OLEZA BOUTIQUE HOTEL",
+      "South East"
+    ],
+    [
+      "OCEAN PANORAMA LODGE",
+      "Pemba Island"
+    ],
+    [
+      "OCEAN PARADISE RESORT & SPA",
+      "North East"
+    ],
+    [
+      "PALUMBO KENDWA",
+      "North"
+    ],
+    [
+      "PALUMBO MNEMBA VIEW",
+      "North East"
+    ],
+    [
+      "PALUMBO WAVES",
+      "North"
+    ],
+    [
+      "PARADISE BEACH RESORT",
+      "North"
+    ],
+    [
+      "PARK HYATT ZANZIBAR",
+      "Intra City"
+    ],
+    [
+      "PASSION BOUTIQUE HOTEL ZANZIBAR",
+      "South East"
+    ],
+    [
+      "PEARL BEACH BY SANSI",
+      "South East"
+    ],
+    [
+      "PORT FERRY",
+      "Intra City"
+    ],
+    [
+      "REEF & BEACH RESORT",
+      "South East"
+    ],
+    [
+      "ROYAL ZANZIBAR BEACH RESORT",
+      "North"
+    ],
+    [
+      "S&S HOTEL",
+      "South East"
+    ],
+    [
+      "SAADANI",
+      "Tanzania"
+    ],
+    [
+      "SAFARI GRAND PARC",
+      "Tanzania"
+    ],
+    [
+      "SAFAYA LUXURY VILLAS",
+      "North"
+    ],
+    [
+      "SANDIES BAOBAB BEACH",
+      "North"
+    ],
+    [
+      "SANSI KENDWA BEACH RESORT",
+      "North"
+    ],
+    [
+      "SBH KILINDINI RESORT",
+      "North East"
+    ],
+    [
+      "SBH MONICA ZANZIBAR",
+      "South East"
+    ],
+    [
+      "SEA CLIFF RESORT & SPA",
+      "North West"
+    ],
+    [
+      "SELOUS",
+      "Tanzania"
+    ],
+    [
+      "SENSATIONS ECO-CHIC HOTEL",
+      "North East"
+    ],
+    [
+      "SHABA BOUTIQUE HOTEL",
+      "Intra City"
+    ],
+    [
+      "SHARAZAD BOUTIQUE HOTEL",
+      "South East"
+    ],
+    [
+      "SHARAZAD WONDERS BOUTIQUE HOTEL",
+      "Intra City"
+    ],
+    [
+      "SHOOTING STAR BOUTIQUE HOTEL",
+      "North East"
+    ],
+    [
+      "SPICE TREE BY TURACO",
+      "Intra City"
+    ],
+    [
+      "STONE TOWN",
+      "Intra City"
+    ],
+    [
+      "SULTAN SANDS ISLAND RESORT",
+      "North East"
+    ],
+    [
+      "SUNSHINE BAY HOTEL ZANZIBAR",
+      "North East"
+    ],
+    [
+      "SUNSHINE MARINE LODGE",
+      "North East"
+    ],
+    [
+      "TBA",
+      "Not applicable"
+    ],
+    [
+      "TEMBO B&B APARTMENTS",
+      "Intra City"
+    ],
+    [
+      "TEMBO HOUSE HOTEL",
+      "Intra City"
+    ],
+    [
+      "THE AIYANA BEACH RESORT",
+      "Pemba Island"
+    ],
+    [
+      "THE ISLAND PONGWE LODGE",
+      "North East"
+    ],
+    [
+      "THE LOOP BEACH RESORT",
+      "South East"
+    ],
+    [
+      "THE MANOR HOUSE",
+      "Intra City"
+    ],
+    [
+      "THE MORA ZANZIBAR",
+      "North East"
+    ],
+    [
+      "THE NEELA BOUTIQUE HOTEL",
+      "Intra City"
+    ],
+    [
+      "THE RESIDENCE ZANZIBAR",
+      "South"
+    ],
+    [
+      "THE SANDS BEACH RESORT",
+      "South East"
+    ],
+    [
+      "THE SEYYIDA HOTEL & SPA",
+      "Intra City"
+    ],
+    [
+      "THE SWAHILI HOUSE",
+      "Intra City"
+    ],
+    [
+      "THE ZANZIBARI BOUTIQUE HOTEL",
+      "North"
+    ],
+    [
+      "TIKITAM PALMS BOUTIQUE HOTEL",
+      "North East"
+    ],
+    [
+      "TOA HOTEL & SPA",
+      "North East"
+    ],
+    [
+      "TUI BLUE BAHARI ZANZIBAR",
+      "North East"
+    ],
+    [
+      "TULIA ZANZIBAR UNIQUE BEACH RESORT",
+      "North East"
+    ],
+    [
+      "UNGUJA LODGE",
+      "South"
+    ],
+    [
+      "UPENDO HOUSE",
+      "Intra City"
+    ],
+    [
+      "UROA BAY BEACH RESORT",
+      "North East"
+    ],
+    [
+      "UZURI VILLA",
+      "South East"
+    ],
+    [
+      "VILLA KIVA BOUTIQUE HOTEL",
+      "North East"
+    ],
+    [
+      "VOI KIWENGWA RESORT",
+      "North East"
+    ],
+    [
+      "YCONA LUXURY RESORT",
+      "North East"
+    ],
+    [
+      "ZANBLUU BEACH HOTEL",
+      "North East"
+    ],
+    [
+      "ZANZIBAR BAY RESORT & SPA",
+      "North East"
+    ],
+    [
+      "ZANZIBAR COFFEE HOUSE",
+      "Intra City"
+    ],
+    [
+      "ZANZIBAR PEARL BOUTIQUE HOTEL & VILLAS",
+      "North East"
+    ],
+    [
+      "ZANZIBAR QUEEN HOTEL",
+      "North East"
+    ],
+    [
+      "ZANZIBAR SERENA HOTEL",
+      "Intra City"
+    ],
+    [
+      "ZANZIBAR WHITE SAND LUXURY VILLAS & SPA",
+      "South East"
+    ],
+    [
+      "ZANZIBLUE",
+      "North East"
+    ],
+    [
+      "ZAWADI HOTEL ZANZIBAR",
+      "South East"
+    ],
+    [
+      "ZOI BOUTIQUE HOTEL ZANZIBAR",
+      "North East"
+    ],
+    [
+      "ZURI ZANZIBAR",
+      "North"
+    ]
+  ]
+}
