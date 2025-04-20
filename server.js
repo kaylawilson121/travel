@@ -30,34 +30,6 @@ const app = express();
 
 connectDB();
 createAdmin();
-// saveData();
-
-// // Find and update all documents
-// const updateServiceDates = async () => {
-//   try {
-//     const bulkOps = [];
-
-//     // Fetch all documents (you can batch this if you want for performance)
-//     const allResas = await Resa.find({}, { _id: 1, service_date: 1 });
-
-//     for (const resa of allResas) {
-//       if (resa.service_date) {
-//         const newDate = new Date(resa.service_date);
-//         newDate.setDate(newDate.getDate() + 1); // Add one day
-
-//         bulkOps.push({
-//           updateOne: {
-//             filter: { _id: resa._id },
-//             update: { $set: { service_date: newDate } },
-//           },
-//         });
-//       }
-//     }
-
-//   } catch (err) {
-//     console.error("Error updating service_date:", err);
-//   }
-// };
 
 const updateServiceDates = async () => {
   // Replace with the path to your Excel file
@@ -93,8 +65,9 @@ const updateServiceDates = async () => {
 
 
 
+
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
       origin: "https://escapadezanzibar-pd2a.vercel.app/",
