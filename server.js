@@ -31,10 +31,10 @@ const app = express();
 connectDB();
 createAdmin();
 
-const updateServiceDates = async () => {
+const updateServiceDates = async (filename) => {
   // Replace with the path to your Excel file
   
-  const filePath = './reworked.xlsx';
+  const filePath = `./uploads/${req.file.filename}.xlsx`;
   const bulkOps = [];
   // Read file buffer
   const fileBuffer = fs.readFileSync(filePath);
@@ -52,12 +52,21 @@ const updateServiceDates = async () => {
   });
 
   for (const resat of json) {
+    let document = await Resa.findOne({ dossier_no: resat.dossier_no });
 
-    const res = new Resa({
-      ...resat,
-      verified : resat.verified == 'Yes' ? 1 : 0,
-    });
-    await res.save(); // Save each item to the database
+    if (document) {
+      // Update the document if it exists
+      await Resa.updateOne({ dossier_no: newData.dossier_no }, {    
+        ...resat,
+        verified : resat.verified == 'Yes' ? 1 : 0,
+      });
+    } else {
+      const res = new Resa({
+        ...resat,
+        verified : resat.verified == 'Yes' ? 1 : 0,
+      });
+      await res.save(); 
+    }
   }
 }
 
@@ -75,17 +84,23 @@ app.use(
       credentials: true,
   })
 )
-// app.use(
-//   cors(
-//     {
-//       origin: "https://77.247.126.189:3050/",
-//       methods: ["GET", "POST", "PUT", "DELETE"],
-//       credentials: true,
-//     }
-//   )
-// )
-// // Serve static files from the dist directory
-// app.use(express.static(path.join(__dirname, "dist")));
+const storage = multer.diskStorage({
+  destination: './uploads/',
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + '-' + file.originalname);
+  }
+});
+
+const upload = multer({ storage: storage });
+
+app.use('/uploads', express.static('uploads'));
+app.post('/upload', upload.single('file'), (req, res) => {
+  if (!req.file) return res.status(400).send('No file uploaded');
+  res.json({ filename: req.file.filename, path: `/uploads/${req.file.filename}.xlsx`});
+  
+  updateServiceDates(req.file.filename);
+});
+
 
 app.use("/api/auth", auth);
 app.use("/api/admin", admin);
