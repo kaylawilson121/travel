@@ -70,7 +70,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-      origin: "https://escapadezanzibar-pd2a.vercel.app/",
+      origin: "*",
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
   })
@@ -85,7 +85,7 @@ app.use(
 //   )
 // )
 // // Serve static files from the dist directory
-app.use(express.static(path.join(__dirname, "dist")));
+// app.use(express.static(path.join(__dirname, "dist")));
 
 app.use("/api/auth", auth);
 app.use("/api/admin", admin);
@@ -98,8 +98,8 @@ app.use("/api/vehicle", vehicle);
 app.use("/api/guid", guid);
 app.use("/api/driver-list", driverList);
 app.use("/api/excursion", excursion);
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
+app.get("/", (req, res) => {
+  res.send("Welcome to the API");
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
