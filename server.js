@@ -35,40 +35,7 @@ createAdmin();
 const updateServiceDates = async (filename) => {
   // Replace with the path to your Excel file
   
-  const filePath = `./uploads/${filename}`;
-  const bulkOps = [];
-  // Read file buffer
-  const fileBuffer = fs.readFileSync(filePath);
-
-  // Parse with xlsx
-  const workbook = XLSX.read(fileBuffer, { type: 'array' });
-
-  // Get first sheet
-  const sheetName = workbook.SheetNames[0];
-  const sheet = workbook.Sheets[sheetName];
   
-  const json = XLSX.utils.sheet_to_json(sheet, {
-    raw: false,
-    cellDates: true
-  });
-
-  for (const resat of json) {
-    let document = await Resa.findOne({ dossier_no: resat.dossier_no });
-
-    if (document) {
-      // Update the document if it exists
-      await Resa.updateOne({ dossier_no: newData.dossier_no }, {    
-        ...resat,
-        verified : resat.verified == 'Yes' ? 1 : 0,
-      });
-    } else {
-      const res = new Resa({
-        ...resat,
-        verified : resat.verified == 'Yes' ? 1 : 0,
-      });
-      await res.save(); 
-    }
-  }
 }
 
 // updateServiceDates();
@@ -95,12 +62,47 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.use('/uploads', express.static('uploads'));
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/resa/upload', upload.single('file'), async (req, res) => {
+  
   console.log("upload file", req.file);
   if (!req.file) return res.status(400).send('No file uploaded');
-  res.json({ filename: req.file.filename, path: `/uploads/${req.file.filename}`});
+
+  const filename = req.file.filename;
+  const filePath = `./uploads/${filename}`;
+  // Read file buffer
+  const fileBuffer = fs.readFileSync(filePath);
+
+  // Parse with xlsx
+  const workbook = XLSX.read(fileBuffer, { type: 'array' });
+
+  // Get first sheet
+  const sheetName = workbook.SheetNames[0];
+  const sheet = workbook.Sheets[sheetName];
   
-  updateServiceDates(req.file.filename);
+  const json = XLSX.utils.sheet_to_json(sheet, {
+    raw: false,
+    cellDates: true
+  });
+
+  for (const resat of json) {
+    let document = await Resa.findOne({ dossier_no: resat.dossier_no });
+
+    if (document) {
+      // Update the document if it exists
+      await Resa.updateOne({ dossier_no: resat.dossier_no }, {    
+        ...resat,
+        verified : resat.verified == 'Yes' ? 1 : 0,
+      });
+    } else {
+      const res = new Resa({
+        ...resat,
+        verified : resat.verified == 'Yes' ? 1 : 0,
+      });
+      await res.save(); 
+    }
+  }
+  
+  res.json({ filename: req.file.filename, path: `/uploads/${req.file.filename}`});
 });
 
 
