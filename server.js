@@ -96,7 +96,7 @@ const upload = multer({ storage: storage });
 
 app.use('/uploads', express.static('uploads'));
 app.post('/upload', upload.single('file'), (req, res) => {
-  console.log("upload file", file);
+  console.log("upload file", req.file);
   if (!req.file) return res.status(400).send('No file uploaded');
   res.json({ filename: req.file.filename, path: `/uploads/${req.file.filename}.xlsx`});
   
