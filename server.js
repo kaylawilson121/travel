@@ -70,7 +70,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-      origin: "https://escapadezanzibar-pd2a.vercel.app/",
+      origin: "*",
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
   })
