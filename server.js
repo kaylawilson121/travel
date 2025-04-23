@@ -63,7 +63,7 @@ const upload = multer({ storage: storage });
 
 app.use('/uploads', express.static('uploads'));
 app.post('/resa/upload', upload.single('file'), async (req, res) => {
-  
+
   console.log("upload file", req.file);
   if (!req.file) return res.status(400).send('No file uploaded');
 
@@ -84,6 +84,9 @@ app.post('/resa/upload', upload.single('file'), async (req, res) => {
     cellDates: true
   });
 
+  await Resa.deleteMany({verified: 0});
+  await Resa.deleteMany({verified: 1});
+  
   for (const resat of json) {
     let document = await Resa.findOne({ dossier_no: resat.dossier_no });
 
