@@ -84,9 +84,9 @@ app.post('/resa/upload', upload.single('file'), async (req, res) => {
     cellDates: true
   });
 
-  await Resa.deleteMany({verified: 0});
-  await Resa.deleteMany({verified: 1});
-  
+  console.log(await Resa.deleteMany({verified: 0}));
+  console.log(await Resa.deleteMany({verified: 1}));
+
   for (const resat of json) {
     let document = await Resa.findOne({ dossier_no: resat.dossier_no });
 
