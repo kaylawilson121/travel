@@ -136,8 +136,8 @@ router.post(
       });
 
       // Encrypt the password
-      // const salt = await bcrypt.genSalt(10);
-      // user.password = await bcrypt.hash(password, salt);
+      const salt = await bcrypt.genSalt(10);
+      user.password = await bcrypt.hash(password, salt);
 
       // Save the user registration details to DB
       await user.save();
