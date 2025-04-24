@@ -119,6 +119,6 @@ const ResaSchema = new mongoose.Schema({
   },
 });
 
-const Resa = mongoose.model("resa", ResaSchema);
+const Resa = mongoose.model("resa1", ResaSchema);
 
 export default Resa;
